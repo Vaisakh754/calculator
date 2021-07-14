@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    
+   <h1>Calculator</h1> 
+   <style>
+        #calc {
+
+            width: 300px;
+            height: 250px;
+            background-color: rgb(20, 20, 20);
+            
+          
+        }
+
+        .btn {
+            width: 96%;
+            height: 40px;
+            font-size: 20px;
+            background-color: rgb(165, 156, 162);
+        }
+        .btn1{
+            background-color: grey;
+        }
+        .btn2{
+            background-color: hotpink;
+        }
+        /* .btn3{
+            background-color: rgb(52, 24, 216);
+        } */
+        .btn4{
+            background-color: rgb(240, 244, 247);
+        }
+ 
+   </style>
+   <table id="calc">
+       <tr>
+        <td colspan="4"><input class="btn btn4" name="display" id="inpt" type="text" style="width: 285px;"></td>
+       </tr>
+       <tr>
+           <td><input type="button" class="btn btn1" onclick="displayNumber('(')" value="("></td>
+           <td><input type="button" class="btn btn1" onclick="displayNumber(')')" value=")"></td>
+           <td><input type="button" class="btn btn1" onclick="clearNumber('C')" value="C"></td>
+           <td><input type="button" class="btn btn2" onclick="displayNumber('%')" value="%"></td>
+       </tr>
+       <tr>
+           <td><input type="button" class="btn" onclick="displayNumber('7')" value="7"></td>
+           <td><input type="button" class="btn" onclick="displayNumber('8')" value="8"></td>
+           <td><input type="button" class="btn" onclick="displayNumber('9')" value="9"></td>
+           <td><input type="button" class="btn btn2" onclick="displayNumber('*')" value="*"></td>
+       </tr>
+       <tr>
+        <td><input type="button" class="btn" onclick="displayNumber('4')" value="4"></td>
+        <td><input type="button" class="btn" onclick="displayNumber('5')" value="5"></td>
+        <td><input type="button" class="btn" onclick="displayNumber('6')" value="6"></td>
+        <td><input type="button" class="btn btn2" onclick="displayNumber('-')" value="-"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="btn" onclick="displayNumber('1')" value="1"></td>
+        <td><input type="button" class="btn" onclick="displayNumber('2')" value="2"></td>
+        <td><input type="button" class="btn" onclick="displayNumber('3')" value="3"></td>
+        <td><input type="button" class="btn btn2" onclick="displayNumber('+')" value="+"></td>
+    </tr>
+    <tr>
+        <td colspan="3"> <input type="button" class="btn"onclick="displayNumber('0')" value="0" style="width: 252px;"></td>
+        <td rowspan="2"><input type="button" class="btn btn2"onclick="evaluateNumber('=')" value="=" style="height: 82px!important;"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="btn btn2"onclick="removeNumber('<')" value="<"></td>
+        <td><input type="button" class="btn btn2"onclick="displayNumber('.')" value="."></td>
+        <td><input type="button" class="btn btn2" onclick="displayNumber('/')"value="/"></td>
+       
+    </tr>
+   
+   </table>
+
+</body>
+</html>
